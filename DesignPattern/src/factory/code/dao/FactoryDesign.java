@@ -20,3 +20,6 @@ public class FactoryDesign {
 	}
 
 }
+//Creational - 5
+//Structual* - 7
+//behaviour - 11
