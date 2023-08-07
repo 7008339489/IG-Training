@@ -29,6 +29,7 @@ public class SetB {
 		employeeList.add(new Employee(15, "Ashok", 23, "Male", "Infrastructure", 2018, 12700.0));
 		employeeList.add(new Employee(16, "Sanvi", 26, "Female", "Development", 2015, 28900.0));
 		
+		
 	//1.How many male and female employees are there in the organization?
 		employeeList.stream().collect(Collectors.groupingBy(g->g.getGender(),Collectors.counting()))
 		.forEach((k,v)-> System.out.println(k+" : "+v));
