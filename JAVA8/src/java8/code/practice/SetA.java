@@ -69,16 +69,17 @@ public class SetA {
 
 //				Given a list of integers, sort all the values present in it in descending order using Stream functions?
 		List<Integer> sortDescending = l.stream().sorted((l1, l2) -> l2.compareTo(l1)).collect(Collectors.toList());
+		List<Integer> sortDescending1 = l.stream().sorted(Comparator.comparing(Integer::intValue).reversed()).collect(Collectors.toList());
 		System.out.println("sortDescending : " + sortDescending);
+		System.out.println("sortDescending other Approche : " + sortDescending1);
 
 //				Counting Empty String
-		Long emptyStringCount = s.stream().filter(f -> f.equals("")).count();
+		Long emptyStringCount = s.stream().filter(f -> f.isEmpty()).count();
 		System.out.println("emptyStringCount : " + emptyStringCount);
 
 //				Count String whose length is more than three
-		
 		  Long moreThanThreeLengthCount =
-		  s.stream().filter(f -> !f.equals("")).collect(Collectors.toMap(Function.identity(), String::length))
+		  s.stream().filter(f -> !f.isEmpty()).collect(Collectors.toMap(Function.identity(), String::length))
 		  .entrySet().stream().filter(f -> f.getValue() > 3).count();
 		  System.out.println("moreThanThreeLengthCount : " + moreThanThreeLengthCount);
 		 
@@ -101,8 +102,13 @@ public class SetA {
 		System.out.println("stringToUpper : " + stringToUpper);
 
 //				Create a List of the square of all distinct numbers
+		l.stream().distinct().map(m -> m*m).collect(Collectors.toList());
 
 //				Get count, min, max, sum, and the average for numbers
+		l.stream().min(Comparator.comparing(Integer::intValue));
+		l.stream().max(Comparator.comparing(Integer::intValue));
+		l.stream().mapToInt(m -> m).sum();
+		l.stream().mapToInt(m -> m).average();
 	}
 
 }
