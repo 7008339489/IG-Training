@@ -2,6 +2,7 @@ package java8.code.practice;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -87,6 +88,11 @@ public class Test {
        .filter(el->el.getValue()>5)
        .collect(Collectors.toList()).forEach(System.out::println);
        
+       //16. Given a list of strings, Find occurance of Characters
+       Arrays.asList(s).stream()
+       .flatMap(m -> m.chars().mapToObj(o->(char)o).map(u -> u.toUpperCase(u)))
+       .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+       .forEach((key,value)-> System.out.println("Character : "+key+" has - "+value));
 		
 	}
 
