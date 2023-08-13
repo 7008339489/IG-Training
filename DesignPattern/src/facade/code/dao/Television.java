@@ -1,12 +1,12 @@
 package facade.code.dao;
 
-public class Television {
+public class Television implements FacadeInterf{
 	
-	public void switchOnTv() {
+	public void switchOn() {
 		System.out.println("TV ON");
 	}
 	
-	public void switchOffTv() {
+	public void switchOff() {
 		System.out.println("TV OFF");
 	}
 

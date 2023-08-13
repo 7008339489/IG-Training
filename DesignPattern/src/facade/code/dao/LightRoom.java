@@ -1,13 +1,15 @@
 package facade.code.dao;
 
-public class LightRoom {
+public class LightRoom implements FacadeInterf{
 	
-	public void lightsDim() {
-		System.out.println("All Lights Dim");
+	@Override
+	public void switchOn() {
+		System.out.println("All Lights Dim");		
 	}
-	
-	public void lightsBright() {
-		System.out.println("All Lights Bright");
+
+	@Override
+	public void switchOff() {
+		System.out.println("All Lights Bright");		
 	}
 
 }

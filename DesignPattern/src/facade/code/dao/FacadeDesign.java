@@ -12,18 +12,18 @@ public class FacadeDesign {
 		this.sound = sound;
 		this.light = light;
 	}
-	
+
 	public void switchOnMovie() {
-		tv.switchOnTv();
-		sound.switchOnSoundSystem();
-		light.lightsDim();
+		tv.switchOn();
+		sound.switchOn();
+		light.switchOn();
 	}
-	
+
 	public void switchOffMovie() {
-		tv.switchOffTv();
-		sound.switchOffSounSystem();
-		light.lightsBright();
-		
+		tv.switchOff();
+		sound.switchOff();
+		light.switchOff();
+
 	}
 
 }
