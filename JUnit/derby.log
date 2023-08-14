@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Sun Aug 13 17:08:45 IST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0189-eeb1-0103-000008b3f908 
+on database directory memory:I:\IGT\GIT\JUnit\471fce76-12de-4c65-a388-cec51513c007 with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
+Loaded from file:/C:/Users/user/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=I:\IGT\GIT\JUnit
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Aug 14 11:08:07 IST 2023:
+Shutting down instance a816c00e-0189-eeb1-0103-000008b3f908 on database directory memory:I:\IGT\GIT\JUnit\471fce76-12de-4c65-a388-cec51513c007 with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
